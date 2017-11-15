@@ -6,22 +6,21 @@ This repository is where I intend to store findings, learnings, hopefully best p
 
 Clone if you find the structure usable.
 
-## Index
-### Architecture
-#### SOLID
-#### Repository pattern
+## Architecture
+### SOLID
+### Repository pattern
 
-### Frameworks
-#### .NET MVC
-#### React
-#### Redux
+## Frameworks
+### .NET MVC
+### React
+### Redux
 
-### Deploy
-#### SemVer
-#### Continous Integration
+## Deploy
+### SemVer
+### Continous Integration
 
-### Tools
-#### Automapper
-#### Webpack
-#### VSTS
-#### Octopus Deploy
+## Tools
+### Automapper
+### Webpack
+### VSTS
+### Octopus Deploy
