@@ -8,6 +8,7 @@ Clone if you find the structure usable.
 
 ## Architecture
 ### SOLID
+### DRY
 ### Repository pattern
 
 ## Frameworks
