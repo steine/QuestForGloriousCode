@@ -6,9 +6,11 @@ This repository is where I intend to store findings, learnings, hopefully best p
 
 Clone if you find the structure usable.
 
-## Architecture
+## Principles
 ### SOLID
 ### DRY
+
+## Design patterns
 ### Repository pattern
 
 ## Frameworks
