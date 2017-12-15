@@ -26,7 +26,19 @@ A Class should be Open for extension but Closed for modification.
 ## Frameworks
 ### .NET MVC
 ### React
+#### Containers
+##### Constructor()
+##### render()
+##### mapStateToProps()
+MapStateToProps is they way to make the component "smart", listening to some part or parts of the state. To avoid unnecessary re-renders make sure that you don't make calculations here in combination with React.PureComponent or handle it with a specific shouldComponentUpdate().
+ex. Component C listens to part A and B from the state, in mStP() we calculate AB from A and B. props.AB will never be shallowly equal to prevProps.AB.
+#### Components
+
 ### Redux
+#### Actions
+#### Middleware
+#### Reducers
+#### Selectors
 
 ## Deploy
 ### SemVer
