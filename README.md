@@ -28,8 +28,8 @@ A Class should be Open for extension but Closed for modification.
 #### WCF SOAP
 ##### ServiceContract
 ##### OperationContract
-###### Async Begin-/End-Method pair
-###### Async Task\<T\> Method
+###### Async Begin-/End-Method pair or Async Task\<T\> Method
+https://blog.stephencleary.com/2012/08/async-wcf-today-and-tomorrow.html
 ##### DataContract
 ##### MessageContract
 #### IEnumerable vs IList or ICollection
