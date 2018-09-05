@@ -25,6 +25,13 @@ A Class should be Open for extension but Closed for modification.
 
 ## Frameworks
 ### .NET MVC
+#### WCF SOAP
+##### ServiceContract
+##### OperationContract
+###### Async Begin-/End-Method pair
+###### Async Task\<T\> Method
+##### DataContract
+##### MessageContract
 #### IEnumerable vs IList or ICollection
 https://stackoverflow.com/questions/8240844/handling-warning-for-possible-multiple-enumeration-of-ienumerable
 ### React
