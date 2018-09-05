@@ -25,6 +25,8 @@ A Class should be Open for extension but Closed for modification.
 
 ## Frameworks
 ### .NET MVC
+#### IEnumerable vs IList or ICollection
+https://stackoverflow.com/questions/8240844/handling-warning-for-possible-multiple-enumeration-of-ienumerable
 ### React
 #### Containers
 ##### Constructor()
