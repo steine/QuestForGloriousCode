@@ -9,7 +9,7 @@ Clone if you find the structure usable.
 ## Principles
 ### SOLID
 #### S: Single Responsibility
-A Class has a single responsibility
+A Class should have one job.
 #### O: Open/Closed
 A Class should be Open for extension but Closed for modification.
 #### L: Liskov substitution
@@ -17,11 +17,12 @@ A Class should be Open for extension but Closed for modification.
 #### I: Interface Segregation
 
 #### D: Dependency Inversion
-
+A Class should not create its dependencies, it should get them as input.
 ### DRY
 
 ## Design patterns
 ### Repository pattern
+### Factory pattern
 
 ## Frameworks
 ### .NET MVC
