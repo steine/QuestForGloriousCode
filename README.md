@@ -26,6 +26,11 @@ A Class should not create its dependencies, it should get them as input.
 
 ## Frameworks
 ### .NET MVC
+#### Feature Folder vs Tech Folder structure
+MVC standard is the /Controller, /Model, /Views folder setup. A new way of looking at this is per Feature approach: /Features/<feature>/Controller, /Features/<feature>/Models, /Features/<feature>/Views.
+http://marisks.net/2016/02/16/feature-folders-vs-tech-folders/
+#### ViewResolver
+Need a new ViewResolver so MVC can find the Feature views in their new folder structure.
 #### WCF SOAP
 ##### ServiceContract
 ##### OperationContract
