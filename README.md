@@ -29,7 +29,12 @@ Do the operation to test
 #### Assert
 Compare to the expected result
 
-## Design patterns
+### TDD
+
+### BDD - Given, When, Then
+https://martinfowler.com/bliki/GivenWhenThen.html
+
+## Design Principles
 ### Repository pattern
 ### Factory pattern
 
