@@ -6,7 +6,7 @@ This repository is where I store findings, learnings, hopefully best practices a
 
 Clone if you find the structure usable.
 
-## Principles
+## Coding Principles
 ### SOLID
 #### S: Single Responsibility
 A Class should have one job.
@@ -19,6 +19,15 @@ A Class should be Open for extension but Closed for modification.
 #### D: Dependency Inversion
 A Class should not create its dependencies, it should get them as input.
 ### DRY
+
+## Testing Principles
+### Tripple-A
+#### Arrange
+Setup the data for the test
+#### Act
+Do the operation to test
+#### Assert
+Compare to the expected result
 
 ## Design patterns
 ### Repository pattern
