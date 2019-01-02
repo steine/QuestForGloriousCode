@@ -32,7 +32,7 @@ Compare to the expected result
 ### TDD
 
 ### BDD - Given, When, Then
-https://martinfowler.com/bliki/GivenWhenThen.html
+[Given, When, Then by Martin Fowler](https://martinfowler.com/bliki/GivenWhenThen.html)
 
 ## Design Principles
 ### Repository pattern
@@ -41,29 +41,49 @@ https://martinfowler.com/bliki/GivenWhenThen.html
 ## Frameworks
 ### .NET MVC
 #### Feature Folder vs Tech Folder structure
-MVC standard is the /Controller, /Model, /Views folder setup. A new way of looking at this is per Feature approach: /Features/<feature>/Controller, /Features/<feature>/Models, /Features/<feature>/Views.
-http://marisks.net/2016/02/16/feature-folders-vs-tech-folders/
+MVC standard is the /Controller, /Model, /Views folder setup. A new way of looking at this is per Feature approach: /Features/\<feature\>/Controller, /Features/\<feature\>/Models, /Features/\<feature\>/Views.
+[Feature Folders vs Tech Foldes](http://marisks.net/2016/02/16/feature-folders-vs-tech-folders/)
 #### ViewResolver
 Need a new ViewResolver so MVC can find the Feature views in their new folder structure.
 #### WCF SOAP
 ##### ServiceContract
 ##### OperationContract
 ###### Async Begin-/End-Method pair or Async Task\<T\> Method
-https://blog.stephencleary.com/2012/08/async-wcf-today-and-tomorrow.html
+[Link](https://blog.stephencleary.com/2012/08/async-wcf-today-and-tomorrow.html)
 ##### DataContract
 ##### MessageContract
 #### IEnumerable vs IList or ICollection
-https://stackoverflow.com/questions/8240844/handling-warning-for-possible-multiple-enumeration-of-ienumerable
+[Link](https://stackoverflow.com/questions/8240844/handling-warning-for-possible-multiple-enumeration-of-ienumerable)
 ### React
-#### Containers
+#### Components
+* Functional Components
+```Javascript
+const FuncComp = () => {}
+```
+* Class Components
+```Javascript
+class ClassComp extends React.Component {
+  render() {} 
+}
+```
+##### Lifecycle functions
+[React docs link](https://reactjs.org/docs/react-component.html#the-component-lifecycle)
 ##### Constructor()
 ##### render()
-##### mapStateToProps()
-MapStateToProps is they way to make the component "smart", listening to some part or parts of the state. To avoid unnecessary re-renders make sure that you don't make calculations here in combination with React.PureComponent or handle it with a specific shouldComponentUpdate().
-ex. Component C listens to part A and B from the state, in mStP() we calculate AB from A and B. props.AB will never be shallowly equal to prevProps.AB.
-#### Components
+##### Component VS PureComponent
+Component implements the shouldComponentUpdate lifecycle function with `return true`
+##### Key attribute
+The Key attribute allows react to find the correct node in the virtual DOM to update.
+* Don't use the `i` in `.map()` if you add or remove elements!
+[Performance & React: Measuring and Fixing Common Bottlenecks](https://www.youtube.com/watch?v=b8IcYOV5_Rc)
 
 ### Redux
+#### Containers
+Smart Components, connected to the Redux state via the HOC connect(mapState, mapDispatch)().
+##### mapStateToProps()
+MapStateToProps is they way to make the component "smart", listening to some part or parts of the state. To avoid unnecessary re-renders make sure that you don't make calculations here (or handle it with a specific shouldComponentUpdate()).
+ex. Component C listens to part A and B from the state, in mStP() we calculate AB from A and B. props.AB will never be shallowly equal to prevProps.AB.
+
 #### Actions
 #### Middleware
 #### Reducers
