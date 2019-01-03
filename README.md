@@ -34,6 +34,8 @@ Compare to the expected result
 ### BDD - Given, When, Then
 [Given, When, Then by Martin Fowler](https://martinfowler.com/bliki/GivenWhenThen.html)
 
+### CSS Utility classes
+
 ## Design Principles
 ### Repository pattern
 ### Factory pattern
