@@ -29,7 +29,8 @@ Do the operation to test
 #### Assert
 Compare to the expected result
 
-### TDD
+### TDD - Testdriven development
+Write tests prior to code, make the test work
 
 ### BDD - Given, When, Then
 [Given, When, Then by Martin Fowler](https://martinfowler.com/bliki/GivenWhenThen.html)
@@ -38,6 +39,9 @@ Compare to the expected result
 
 ## Design Principles
 ### Repository pattern
+Separate your code with a Repository and a Service layer.
+Allowing the communication with the Database and conversion into data entities to be separated from the business/service logic.
+
 ### Factory pattern
 
 ## Frameworks
@@ -87,9 +91,13 @@ MapStateToProps is they way to make the component "smart", listening to some par
 ex. Component C listens to part A and B from the state, in mStP() we calculate AB from A and B. props.AB will never be shallowly equal to prevProps.AB.
 
 #### Actions
-#### Middleware
+Dispatched from the app to modify the global state, (or trigger other middlware actions).
+#### Middlewares
+A chain of listening services that might manipulate, trigger new or delete actions. Any calls to the outside of the react app should be handled with a middleware. I.e. an ApiMiddleware for external API calls.
 #### Reducers
+A chain of listening services that define and manipulate the global state, called the store.
 #### Selectors
+Methods for retreiving data from the store.
 
 ## Deploy
 ### SemVer
