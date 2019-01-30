@@ -9,11 +9,11 @@ Clone if you find the structure usable.
 ## Coding Principles
 ### SOLID
 #### S: Single Responsibility
-A Class should have one job.
+A Class should have one job and not become a "god class" that does everything.
 #### O: Open/Closed
-A Class should be Open for extension but Closed for modification.
+A Class should be Open for extension but Closed for modification. Try not to modify the current class, make it inherit another interface if possilble.
 #### L: Liskov substitution
-Subclasses should implement the full baseclass. Do not force the using classes of the interface/abstract class to do sanity checks from throwing exceptions or doing nothing in implemented methods.
+Subclasses should implement the full baseclass. Do not force the classes using the interface/abstract class to do sanity checks from exceptions thrown or nulls returned in its implemented methods. "If it quacks like a duck, looks like a duck but needs batteries - you probably have the wrong abstraction"
 #### I: Interface Segregation
 Small and specific interfaces, also called role interfaces. A class that implements an interface should not be forced to implement methods it is not interested in.
 #### D: Dependency Inversion
