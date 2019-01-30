@@ -13,12 +13,13 @@ A Class should have one job.
 #### O: Open/Closed
 A Class should be Open for extension but Closed for modification.
 #### L: Liskov substitution
-
+Subclasses should implement the full baseclass. Do not force the using classes of the interface/abstract class to do sanity checks from throwing exceptions or doing nothing in implemented methods.
 #### I: Interface Segregation
-
+Small and specific interfaces, also called role interfaces. A class that implements an interface should not be forced to implement methods it is not interested in.
 #### D: Dependency Inversion
 A Class should not create its dependencies, it should get them as input.
 ### DRY
+Don't Repead Yourself. When you feel that you are almost writing the same lines of code, try to refactor and extract that logic into its own function/method/component/class/program.
 
 ## Testing Principles
 ### Tripple-A
