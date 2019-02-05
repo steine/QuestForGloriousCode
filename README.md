@@ -13,8 +13,6 @@ Clone if you find the structure usable.
 #### Complex types
 Data structures built from primitive and other complex types.
 (C# `struct` has only primitive types)
-#### Objects vs. Data Structures
-Objects hide their data behind abstractions and expose functions that operate on that data. Data structure expose their data and have no meaningful functions.
 
 ### Algorithms
 A problem solution described in steps.
