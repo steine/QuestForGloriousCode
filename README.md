@@ -148,6 +148,8 @@ Write tests prior to code, make the test work
 ### Repository pattern
 Separate your code with a Repository and a Service layer.
 Allowing the communication with the Database and conversion into data entities to be separated from the business/service logic.
+https://www.youtube.com/watch?v=rtXpYpZdOzM
+### UnitOfWork
 
 ### Factory pattern
 
