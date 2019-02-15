@@ -28,9 +28,16 @@ Proof for finding Big-O for algorithms.
 ### Functions / Methods
 #### Access Modifiers (public, private (, protected, internal, ...)
 #### Static
-`public static decimal Ceiling (decimal d);`
+Allows access to the method from the class definition (instead of the instanciated object)
+
+`public static int Max(int a, int b);` -> `Math.Max(5, 3)`
+
+#### Extension methods
+`public static int WordCount(this String str);` -> `"Hello World".WordCount()`
+
 #### Side effects
 Change to data that is not returned by the function.
+
 #### in/ref/out keywords
 `in` instanciated outside, not allowed to be change inside. Pass by reference.
 
