@@ -33,16 +33,24 @@ Proof for finding Big-O for algorithms.
 Change to data that is not returned by the function.
 #### in/ref/out keywords
 `in` instanciated outside, not allowed to be change inside. Pass by reference.
+
 `ref` needs to be instanciated before being passed. Data flows in and out.
+
 `out` must be instanciated inside. Data flows only out.
+
 `public static bool TryParse (string input, out Guid result);`
+
 `ref readonly` instanciated outside, not allowed to be change inside.
+
 [Read more](http://tooslowexception.com/readonly-ref-variables-in-parameters-and-readonly-structs/)
 
 ## Coding Principles
+### DRY
+Don't Repead Yourself. When you feel that you are almost writing the same lines of code, try to refactor and extract that logic into its own function/method/component/class/program.
+
 ### SOLID
 #### S: Single Responsibility
-A Class should have one job and not become a "god class" that does everything.
+A Class should have one responsibility and not become "god objects" that does everything.
 #### O: Open/Closed
 A Class should be Open for extension but Closed for modification. Try not to modify the current class, make it inherit another interface if possilble.
 #### L: Liskov substitution
@@ -51,8 +59,9 @@ Subclasses should implement the full baseclass. Do not force the classes using t
 Small and specific interfaces, also called role interfaces. A class that implements an interface should not be forced to implement methods it is not interested in.
 #### D: Dependency Inversion
 A Class should not create its dependencies, it should get them as input.
-### DRY
-Don't Repead Yourself. When you feel that you are almost writing the same lines of code, try to refactor and extract that logic into its own function/method/component/class/program.
+
+### Separation of Concern
+Separate your program into non-overlapping features.
 
 ### Clean Code ([Summary of 'Clean code' by Robert C. Martin](https://gist.github.com/wojteklu/73c6914cc446146b8b533c0988cf8d29)) 
 #### General rules
