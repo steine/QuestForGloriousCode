@@ -146,10 +146,17 @@ Write tests prior to code, make the test work
 
 ## Design Principles
 ### Repository pattern
-Separate your code with a Repository and a Service layer.
+Separate your ORM from your business logic.
 Allowing the communication with the Database and conversion into data entities to be separated from the business/service logic.
 https://www.youtube.com/watch?v=rtXpYpZdOzM
-### UnitOfWork
+
+### Unit of Work
+Encapsulates data model change transactions.
+Owns the "SaveChanges" action. 
+One UoW is used in tandem with several repositories.
+
+### Service Layer
+Separates the business logic from the presentation layers.
 
 ### Factory pattern
 
