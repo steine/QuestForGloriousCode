@@ -31,10 +31,13 @@ Proof for finding Big-O for algorithms.
 `public static decimal Ceiling (decimal d);`
 #### Side effects
 Change to data that is not returned by the function.
-#### ref/out keyword
+#### in/ref/out keywords
+`in` instanciated outside, not allowed to be change inside. Pass by reference.
 `ref` needs to be instanciated before being passed. Data flows in and out.
 `out` must be instanciated inside. Data flows only out.
 `public static bool TryParse (string input, out Guid result);`
+`ref readonly` instanciated outside, not allowed to be change inside.
+[Read more](http://tooslowexception.com/readonly-ref-variables-in-parameters-and-readonly-structs/)
 
 ## Coding Principles
 ### SOLID
