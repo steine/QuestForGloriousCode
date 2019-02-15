@@ -26,12 +26,14 @@ Ex. Binary chop: Best case: `O(1)`, Average and Worst case: `O(log(n))`
 Proof for finding Big-O for algorithms.
 
 ### Functions / Methods
-#### Access Modifiers (Public, Private (, protected, internal, ...)
+#### Access Modifiers (public, private (, protected, internal, ...)
 #### Static
 `public static decimal Ceiling (decimal d);`
 #### Side effects
 Change to data that is not returned by the function.
-#### Ref/Out keyword
+#### ref/out keyword
+`ref` needs to be instanciated before being passed. Data flows in and out.
+`out` must be instanciated inside. Data flows only out.
 `public static bool TryParse (string input, out Guid result);`
 
 ## Coding Principles
