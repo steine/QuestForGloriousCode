@@ -179,6 +179,9 @@ One UoW is used in tandem with several repositories.
 ### Service Layer
 Separates the business logic from the presentation layers.
 
+### Clean Architecture
+https://www.youtube.com/watch?v=_lwCVE_XgqI
+
 ### Factory pattern
 
 ## Frameworks
