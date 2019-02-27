@@ -176,6 +176,13 @@ Encapsulates data model change transactions.
 Owns the "SaveChanges" action. 
 One UoW is used in tandem with several repositories.
 
+### Chain of Responsibility
+"...a chain of receiver objects having the responsibility, depending on run-time conditions, to either handle a request or forward it to the next receiver on the chain." - [Wiki](https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern)
+
+Ex. Repositoriy with CoR:
+The Service layer shouldn't know if there's a Cache or that some data might be located in an archived table. The Service should only request the data from the repository. With a CoR implementation on a `IXRepository` as `XRepoCache() -> XRepoSQL() -> XRepoArchive()` the Service only needs to ask the start of the chain for data instead of doing logic for if the data is in the cache or not.
+The chain itself is build by each node implementing the repository interface with the addition of a `IXRepository next` property to another repository of the same interface. Logic is moved into the repository on what should be done if it's a hit or miss.
+
 ### Service Layer
 Separates the business logic from the presentation layers.
 
