@@ -233,6 +233,11 @@ The Key attribute allows react to find the correct node in the virtual DOM to up
 ### Redux
 #### Containers
 Smart Components, connected to the Redux state via the HOC connect(mapState, mapDispatch)().
+##### Connect()()
+Allows the component to map state data into its props and exposes the dispatch function for triggering actions.
+###### Where to Connect
+The larger the app, the lower level to Connect. A low level Connect can save workloads higher up from fewer rerenders.
+
 ##### mapStateToProps()
 MapStateToProps is they way to make the component "smart", listening to some part or parts of the state. To avoid unnecessary re-renders make sure that you don't make calculations here (or handle it with a specific shouldComponentUpdate()).
 ex. Component C listens to part A and B from the state, in mStP() we calculate AB from A and B. props.AB will never be shallowly equal to prevProps.AB.
