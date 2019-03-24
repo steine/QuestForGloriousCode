@@ -196,8 +196,10 @@ https://www.youtube.com/watch?v=_lwCVE_XgqI
 #### Feature Folder vs Tech Folder structure
 MVC standard is the /Controller, /Model, /Views folder setup. A new way of looking at this is per Feature approach: /Features/\<feature\>/Controller, /Features/\<feature\>/Models, /Features/\<feature\>/Views.
 [Feature Folders vs Tech Foldes](http://marisks.net/2016/02/16/feature-folders-vs-tech-folders/)
-#### ViewResolver
+##### .NET
 Need a new ViewResolver so MVC can find the Feature views in their new folder structure.
+##### .NET Core
+See [OdeToCode/AddFeatureFolders](https://github.com/OdeToCode/AddFeatureFolders) for a good starting point on adding viewPaths.
 #### WCF SOAP
 ##### ServiceContract
 ##### OperationContract
@@ -229,6 +231,7 @@ Component implements the shouldComponentUpdate lifecycle function with `return t
 The Key attribute allows react to find the correct node in the virtual DOM to update.
 * Don't use the `i` in `.map()` if you add or remove elements!
 [Performance & React: Measuring and Fixing Common Bottlenecks](https://www.youtube.com/watch?v=b8IcYOV5_Rc)
+[Lin Clark: A cartoon guide to performance in React - JSConf Iceland 2016](https://www.youtube.com/watch?v=NGxVLnJKhP8)
 
 ### Redux
 #### Containers
